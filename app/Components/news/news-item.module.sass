@@ -1,0 +1,62 @@
+@import '../../styles/variables'
+
+.item
+  display: flex
+  align-items: center
+  justify-content: center
+  background: #f8f3ef
+  padding: 2rem 0
+  margin-bottom: 1rem
+  .category
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 15rem
+    height: 10rem
+    background: white
+    color: #746b63
+    font-size: 1.2rem
+
+  .content
+    text-align: left
+    padding-left: 3rem
+    .heading
+      font-weight: bold
+      margin-bottom: 1rem
+      font-size: 1.2rem
+      max-width: 90%
+      overflow: hidden
+      text-overflow: ellipsis
+      white-space: nowrap
+    .brief
+
+      color: #5d5957
+      max-width: 90%
+      overflow: hidden
+      text-overflow: ellipsis
+      white-space: nowrap
+  .date
+    padding-right: 2rem
+    color: #bfb1a5
+    .yearMonth
+      padding-bottom: 0.5rem
+      font-size: 12px
+    .day
+      font-size: 24px
+
+@media(max-width: 768px)
+  .item
+    flex-direction: column
+    .category
+      width: 80%
+      height: 16rem
+      margin-bottom: 2rem
+    .content
+      padding-left: 0
+      margin-bottom: 1.5rem
+      text-align: center
+      width: 90%
+    .brief
+      margin: auto
+
+    

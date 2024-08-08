@@ -1,95 +1,30 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import styles from './page.module.sass'
+import Contact from './Components/home-sections/contact'
+import Stylists from './Components/home-sections/stylists'
+import Carousel from './Components/home-sections/carousel/carousel'
+import EnvironmentCarousel from './Components/home-sections/environment-carousel';
 
-export default function Home() {
+
+const HomePage = () => {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+      <div className={styles.wrapper}>
+        <div className={styles.about}>
+          汎亞髮藝，這裡不僅是一個理髮店，更像是一個開啟個人風格無限可能性的寶盒。<br />
+          我們將髮藝視為一種藝術，每一根髮絲都是我們創造美麗的畫筆，<br />
+          每位顧客都是我們的畫布，我們的使命就是讓每個人都散發出自信與魅力。<br />
+          <br />
+          我們專注於將髮型打造成為展現個人風格的藝術品。<br />
+          無論您追求的是時尚前衛還是經典優雅，我們的專業髮型師團隊都能滿足您的需求。<br />
+          我們使用高品質產品和先進技術，為您提供修剪、染髮、燙髮等多樣化服務，讓您散發自信魅力。<br />
         </div>
+        <EnvironmentCarousel />
+        <Contact />
+        <Carousel />
       </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  );
+    </>
+  )
 }
+
+
+export default HomePage

@@ -1,0 +1,107 @@
+@import '../styles/variables'
+
+.wrapper
+  justify-content: center
+  margin: 4rem auto
+  display: flex
+  color: #555555c8
+
+.title
+  margin: 3rem 0
+  text-align: center
+  font-size: 2rem
+  color: $title-color
+.address, .tel, .openTime
+  display: flex
+
+.info > div
+  padding-bottom: 1rem
+  margin-bottom: 1rem
+  border-bottom: 1px solid #edebebd6
+.infoTitle
+  width: 5rem
+  margin-right: 0.4rem
+  text-align: center
+.address
+  margin-top: 2rem
+.map
+  margin-left: 2rem
+  width: 40%
+
+//customer-service btn 
+.customer-service
+  margin-bottom: 2rem
+  display: flex
+  justify-content: center
+
+  button
+    border: none
+    margin-right: 2rem
+    width: 10rem
+    padding: 1.5rem
+    border-radius: 0.8rem
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px
+  .line
+    position: relative
+
+    img
+      position: absolute
+      right: 21px
+      top: 1px
+
+//customer-service form
+.form-wrapper
+  padding: 2rem 0
+.contact-form
+  display: flex
+  flex-direction: column
+  width: 20rem
+  margin: 5rem auto
+  padding: 4rem
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px
+  background: $secondry-color  
+  border-radius: 0.8rem
+  h3
+    text-align: center
+    
+    color: $primary-color
+  span
+    color: $primary-color
+    margin-bottom: 2rem
+    text-align: center
+
+  input
+    width: 100%
+    border: none
+    padding: 0.5rem
+    margin-bottom: 1rem
+    text-shadow: 1px 1px 0 #fff
+    outline: none
+    border-radius: 0.6rem
+  textarea
+    resize: none
+    margin: 1rem 0
+    width: 100%
+    border-radius: 0.4rem
+    border: none
+    outline: none
+  button
+    width: 100%
+    border: none
+    padding: 1rem 0
+    border-radius: 0.4rem
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px
+
+@media(max-width: 768px)
+  .title
+    margin-bottom: 0
+  .wrapper
+    flex-direction: column
+    width: 80%
+    margin: 0 auto
+    .info
+      max-width: 30rem
+      margin: 0 auto
+    .map
+      width: 90%
+      margin: 2rem auto

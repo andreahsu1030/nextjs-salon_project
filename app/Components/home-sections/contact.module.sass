@@ -1,0 +1,31 @@
+@import '../../styles/variables'
+.contact
+  height: 20rem
+  position: relative
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  a
+    color: $secondry-color
+    position: relative
+    border: 1px solid
+    padding: 0.5rem 2.5rem
+    z-index: 2
+    text-align: center
+    text-decoration: none
+
+  p
+    color: #f9f3eac2
+    position: relative
+    z-index: 2
+    margin-bottom: 1.5rem
+
+.contact:after
+  content: ''
+  position: absolute
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  background: rgba(60, 50, 37, 0.917)
